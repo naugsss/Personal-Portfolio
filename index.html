@@ -247,7 +247,7 @@
         </div>
 
         <!-- contact us form -->
-        <div class="contactme-form-container" id="contactme">
+        <!-- <div class="contactme-form-container" id="contactme">
           <h1 class="contactme-heading">Contact Me</h1>
           <p class="contactme-sub-heading">
             Questions, thoughts or just want to say hello?
@@ -259,7 +259,7 @@
                   class="formfield"
                   type="text"
                   name="myName"
-                  id="usename"
+                  id="username"
                   placeholder="Enter your name"
                 />
                 <input
@@ -273,13 +273,13 @@
                   class="formfield"
                   type="text"
                   name="subject"
-                  id="user-message"
+                  id="user-subject"
                   placeholder="Enter your subject"
                 />
                 <textarea
                   class="formfield formfield-textarea"
                   name="message"
-                  id=""
+                  id="message"
                   cols="30"
                   rows="10"
                   placeholder="Enter your message"
@@ -288,7 +288,7 @@
 
               <div>
                 <button
-                  onclick="sendMessage(event)"
+                  onclick="sendMessage()"
                   type="submit"
                   class="contact-me-btn"
                   id="submit-btn"
@@ -299,7 +299,19 @@
               </div>
             </form>
           </div>
-        </div>
+        </div> -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Myname" required />
+        <label for="message">Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br /><br />
+        <button onclick="sendMessage()">Send</button>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
