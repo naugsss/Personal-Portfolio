@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: "Be Vietnam Pro", sans-serif;
   scroll-behavior: smooth;
-  /* background-color: gainsboro; */
 }
 
 #wrapper {
@@ -143,6 +142,10 @@ a {
   padding: 20px;
   font-size: 20px;
   background-color: rgb(110, 87, 224);
+}
+
+.contact-me-btn:hover {
+  background-color: rgb(92, 67, 215);
 }
 
 .resume-download-btn {
@@ -327,4 +330,53 @@ a {
   padding: 1rem;
   border-radius: 0.5rem;
   font-family: inherit;
+}
+
+.contactme-heading {
+  font-size: 50px;
+  font-style: bold;
+}
+
+.contactme-sub-heading {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.66);
+  margin-bottom: 20px;
+}
+
+.contactme-form-container {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 70%;
+  margin: 2rem 5rem;
+}
+
+.formfield-container {
+  width: 100%;
+}
+
+.formfield {
+  width: 100%;
+  height: 42px;
+  padding: 0 2rem;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #1f1f1f;
+  font-weight: 500;
+  border: none;
+  margin-top: 17px;
+}
+
+.formfield-textarea {
+  height: auto;
+  padding-top: 1rem;
 }

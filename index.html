@@ -25,8 +25,9 @@
           </div>
 
           <div class="nav-items">
-            <div><a href="#projects">Projects</a></div>
+            <div><a href="#aboutme">About</a></div>
             <div><a href="#skills">Skills</a></div>
+            <div><a href="#projects">Projects</a></div>
             <div><a href="#contactme">Contact Me</a></div>
           </div>
         </div>
@@ -58,7 +59,7 @@
             </p>
             <br />
             <br />
-            <a href="#contact" class="button"> Contact Me </a>
+            <a href="#contactme" class="button"> Contact Me </a>
           </div>
 
           <div class="hero-section-right">
@@ -73,7 +74,7 @@
           </div>
         </div>
         <!-- About me section -->
-        <div class="about-me">
+        <div class="about-me" id="aboutme">
           <h1 class="about-heading">About me</h1>
           <div class="about-container">
             <div class="about-image">
@@ -94,8 +95,8 @@
               </p>
               <a
                 class="resume-download-btn"
-                href="https://drive.google.com/file/d/1cxFSduaT3hQmjvtNNoe3SN2t3uCV5g1H/view?usp=sharing"
-                target="_blank"
+                href="assets\Resume_Aaryan_naugaraiya.pdf"
+                download
                 >Resume</a
               >
             </div>
@@ -244,9 +245,63 @@
             </div>
           </div>
         </div>
+
+        <!-- contact us form -->
+        <div class="contactme-form-container" id="contactme">
+          <h1 class="contactme-heading">Contact Me</h1>
+          <p class="contactme-sub-heading">
+            Questions, thoughts or just want to say hello?
+          </p>
+          <div class="contactme-form-container">
+            <form class="contact-form" action="">
+              <div class="formfield-container">
+                <input
+                  class="formfield"
+                  type="text"
+                  name="myName"
+                  id="usename"
+                  placeholder="Enter your name"
+                />
+                <input
+                  class="formfield"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email address"
+                />
+                <input
+                  class="formfield"
+                  type="text"
+                  name="subject"
+                  id="user-message"
+                  placeholder="Enter your subject"
+                />
+                <textarea
+                  class="formfield formfield-textarea"
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+
+              <div>
+                <button
+                  onclick="sendMessage(event)"
+                  type="submit"
+                  class="contact-me-btn"
+                  id="submit-btn"
+                >
+                  Send Message
+                  <i class="submit-icon fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-    <i class="fa-brands fa-instagram"></i>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var typeData = new Typed(".role", {

@@ -60,3 +60,21 @@ function displayProject(person) {
   info.textContent = project.text;
   projectLink.href = project.link;
 }
+
+function sendMessage() {
+  const request = new XMLHttpRequest();
+  request.open(
+    "POST",
+    "https://discord.com/api/webhooks/1168592622613446656/S2LddfrGjGoJRhoiuRymG-vq7v9Fx7sb1dzS2YvjT1Ze28ZbH8TN4jeneoNAeZFfjJcI"
+  );
+
+  request.setRequestHeader("Content-type", "application/json");
+
+  const params = {
+    username: (myName = document.getElementById("username").value),
+    avatar_url: "",
+    content: (message = document.getElementById("user-message").value),
+  };
+
+  request.send(JSON.stringify(params));
+}
