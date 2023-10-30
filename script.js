@@ -68,6 +68,7 @@ function sendMessage() {
     "https://discord.com/api/webhooks/1168592622613446656/S2LddfrGjGoJRhoiuRymG-vq7v9Fx7sb1dzS2YvjT1Ze28ZbH8TN4jeneoNAeZFfjJcI"
   );
   request.setRequestHeader("Content-type", "application/json");
+
   const params = {
     username: (Myname = document.getElementById("name").value),
     avatar_url: "",
