@@ -1,3 +1,4 @@
+// projects-data
 const projects = [
   {
     id: 1,
@@ -37,7 +38,7 @@ prevBtn.addEventListener("click", function () {
   if (currentItem < 0) {
     currentItem = projects.length - 1;
   }
-  showPerson(currentItem);
+  displayProject(currentItem);
 });
 
 nextBtn.addEventListener("click", function () {
@@ -45,17 +46,17 @@ nextBtn.addEventListener("click", function () {
   if (currentItem > projects.length - 1) {
     currentItem = 0;
   }
-  showPerson(currentItem);
+  displayProject(currentItem);
 });
 
 window.addEventListener("DOMContentLoaded", function () {
-  showPerson(currentItem);
+  displayProject(currentItem);
 });
 
-function showPerson(person) {
-  const item = projects[person];
-  img.src = item.img;
-  projectName.textContent = item.name;
-  info.textContent = item.text;
-  projectLink.href = item.link;
+function displayProject(person) {
+  const project = projects[person];
+  img.src = project.img;
+  projectName.textContent = project.name;
+  info.textContent = project.text;
+  projectLink.href = project.link;
 }
