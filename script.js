@@ -74,4 +74,5 @@ function sendMessage() {
     content: (message = document.getElementById("message").value),
   };
   request.send(JSON.stringify(params));
+  alert("message sent successfully.");
 }
