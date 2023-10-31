@@ -69,6 +69,14 @@ function sendMessage() {
   );
   request.setRequestHeader("Content-type", "application/json");
 
+  const username = document.getElementById("name").value;
+  const userContent = document.getElementById("message").value;
+
+  if (username.length == 0 || userContent.length == 0) {
+    alert("Please enter valid details");
+    return;
+  }
+
   const params = {
     username: (Myname = document.getElementById("name").value),
     avatar_url: "",

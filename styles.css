@@ -17,6 +17,7 @@
 .container {
   width: 1400px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .navbar {
@@ -128,6 +129,7 @@ a {
   display: flex;
   font-size: 20px;
   gap: 100px;
+  max-width: 1400px;
 }
 
 .about-description {
@@ -135,49 +137,29 @@ a {
   margin-bottom: 55px;
 }
 
-.contact-me-btn {
-  margin-top: 25px;
-  border-radius: 20px;
-  color: white;
-  border: none;
-  padding: 20px;
-  font-size: 20px;
-  background-color: rgb(110, 87, 224);
-}
-
-.contact-me-btn:hover {
-  background-color: rgb(92, 67, 215);
-}
-
-.resume-download-btn {
-  margin-top: 25px;
-  border-radius: 10px;
-  color: white;
-  border: none;
-  padding: 20px;
-  padding-right: 30px;
-  padding-left: 30px;
-  font-size: 20px;
-  background-color: rgb(110, 87, 224);
-}
-
-.resume-download-btn:hover {
-  background-color: rgb(92, 67, 215);
-}
-
 .hero-section-heading {
   margin: 10px;
 }
-.button {
+.button,
+.contact-me-btn,
+.resume-download-btn,
+#project-link {
+  font-size: 25px;
   color: white;
   background-color: rgb(110, 87, 224);
   padding: 1rem;
   border-radius: 0.5rem;
   font-family: inherit;
+  border: none;
 }
 
-.button:hover {
+.button:hover,
+.resume-download-btn:hover,
+#project-link:hover,
+.contact-me-btn:hover {
   background-color: rgb(92, 67, 215);
+  border: none;
+  cursor: pointer;
 }
 
 .home_social-icon {
@@ -187,21 +169,12 @@ a {
 .home_social-icon:hover {
   color: rgb(92, 67, 215);
 }
-.skills {
-  position: relative;
-  display: flex;
-  padding: 5rem;
-  /* margin: 10rem auto; */
-  gap: 10px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .skill-container {
   display: flex;
   gap: 6rem;
   margin-top: 10px;
+  margin-left: 100px;
 }
 
 .skill-container-left {
@@ -270,11 +243,13 @@ a {
   margin-bottom: 20px;
 }
 
-.projects {
+.projects,
+.skills {
   position: relative;
   display: flex;
   padding: 5rem;
-  margin: 10rem auto;
+  margin-top: 10px;
+  margin-bottom: 100px;
   gap: 10px;
   flex-direction: column;
   justify-content: center;
@@ -311,6 +286,12 @@ a {
   height: 50px;
 }
 
+.prev-btn:hover,
+.next-btn:hover {
+  cursor: pointer;
+  color: rgb(92, 67, 215);
+}
+
 #project-img {
   border-radius: 10px;
 }
@@ -323,14 +304,6 @@ a {
 
 #info {
   margin-bottom: 40px;
-}
-
-#project-link {
-  color: white;
-  background-color: rgb(110, 87, 224);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  font-family: inherit;
 }
 
 .contactme-heading {
@@ -380,6 +353,7 @@ a {
 .formfield-textarea {
   height: auto;
   padding-top: 1rem;
+  resize: none;
 }
 
 #submit-btn {
